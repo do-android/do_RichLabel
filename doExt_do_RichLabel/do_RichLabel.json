@@ -1,0 +1,93 @@
+{
+  "ID": "do1_RichLabel",
+  "IsContainer": "0",
+  "Type": "UI",
+  "Name": "富文本标签框",
+  "Version": "Internal",
+  "Description": "",
+  "Icon": "",
+  "IOS": {
+    "Support": 0,
+    "MinVersion": ""
+  },
+  "Android": {
+    "Support": 0,
+    "MinVersion": ""
+  },
+  "Windows": {
+    "Support": 0,
+    "MinVersion": ""
+  },
+  "WindowsPhone": {
+    "Support": 0,
+    "MinVersion": ""
+  },
+  "Html": {
+    "Support": 1,
+    "MinVersion": "5.0"
+  },
+  "Properties": [
+    {
+      "ID": "maxHeight",
+      "Name": "最大高度",
+      "Type": "Number",
+      "DefaultValue": "",
+      "EditType": "1",
+      "Group": "",
+      "Description": "label的height为\\\"－1\\\"的时候，label会根据text内容自动适配变高，但是不会高于maxHeight",
+      "Design": {
+        "Type": "Text",
+        "Data": []
+      }
+    },
+    {
+      "ID": "maxLines",
+      "Name": "最多行数",
+      "Type": "Number",
+      "DefaultValue": "",
+      "EditType": "1",
+      "Group": "",
+      "Description": "label的最多行数，超过用...表示（只有当height、width为-1时才有效，且默认先向右填充至父控件的宽度后换行）",
+      "Design": {
+        "Type": "UInteger",
+        "Data": []
+      }
+    },
+    {
+      "ID": "maxWidth",
+      "Name": "最大宽度",
+      "Type": "Number",
+      "DefaultValue": "",
+      "EditType": "1",
+      "Group": "",
+      "Description": "label的width为\\\"－1\\\"的时候，label会根据text内容自动适配变宽，但是不会宽于maxWidth",
+      "Design": {
+        "Type": "Text",
+        "Data": []
+      }
+    },
+    {
+      "ID": "text",
+      "Name": "文本显示内容",
+      "Type": "String",
+      "DefaultValue": "",
+      "EditType": "1",
+      "Group": "",
+      "Description": "获取或设置与此控件关联的文本，可设置为一个html格式的文本，兼容html常用标签",
+      "Design": {
+        "Type": "Text",
+        "Data": []
+      }
+    }
+  ],
+  "Events": [
+    {
+      "ID": "linkTouch",
+      "Description": "链接点击事件",
+      "ReturnType": "Node",
+      "ReturnDesc": "返回<aherf></a>标签里的所有字段，如果href里是http:或者https开头，会自动使用外部浏览器打开；如果是mail:打头，会自动使用外部邮箱打开；如果是tel:打头，会自动使用电话拨号打开；其他情况触发linktouch事件：比如<a href='#aaa' id='xx'> 点击我</a> ，则用户点击“点击我”这个link的时候会触发一个linkTouch事件，返回的data是{value:'点击我' href:'#aaa',id:'xx'}"
+    }
+  ],
+  "syncMethodes": [],
+  "asyncMethodes": []
+}

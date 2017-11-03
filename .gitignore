@@ -1,0 +1,10 @@
+*.class
+*.apk
+bin/
+gen/
+.settings/
+proguard/
+*.classpath
+/doExt_do_RichLabel/do_build.xml
+/doExt_do_RichLabel/libs/docore.jar
+/doExt_do_RichLabel/do_RichLabel.zip
